@@ -21,11 +21,11 @@ echo "Checking for throttling issues since last reboot..."
 
 throttled_output=$($GET_THROTTLED_CMD)
 throttled_value=$(echo $throttled_output | awk -F'=' '{print $2}')
-throttled_binary=$(echo "obase=2; $throttled_value" | bc)
 warnings=0
 
 for position in "${!MESSAGES[@]}"; do
-    if [ ${#throttled_binary} -gt $position ] && [ "${throttled_binary: -$((position + 1)):1}" == "1" ]; then
+    mask=$((1 << position))
+     if (( (throttled_value & mask) != 0 )); then
         echo "${MESSAGES[$position]}"
         warnings=$((warnings + 1))
     fi
