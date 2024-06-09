@@ -1,5 +1,5 @@
 #!/bin/bash
-#https://github.com/yjeanrenaud/yjeanrenaud-rPi_check_throttled
+#https://github.com/yjeanrenaud/rPi_check_throttled
 # checks if the Raspberry Pi's Broadcom SoC is throttled and enumerates the reason for that.
 # based upon the work of @HarlemSquirrel https://harlemsquirrel.github.io/shell/2019/01/05/monitoring-raspberry-pi-power-and-thermal-issues.html
 # I just translated it to pure bash, without extra utils
