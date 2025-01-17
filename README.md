@@ -9,9 +9,16 @@ I love that code for debugging and monitoring various issues on these single boa
   `sudo usermod -a -G video [USERNAME]`.
   The default user `pi` ususally already is in that group, so everything works fine with that. 
 
+# Installation
+You basically just need the script:
+`wget https://raw.githubusercontent.com/yjeanrenaud/rPi_check_throttled/refs/heads/main/rPi_check_throttled.sh`
+`chmod a+x rPi_check_throttled.sh`
+optionally: 
+`sudo mv rPi_check_throttled.sh`
 # Usage
 just run the script:
 `.\rPi_check_throttled.sh`
+(or just `rPi_check_throttled.sh` if you moved it to */usr/bin*)
 # Todos
 - add some examples for permanent monitoring
 - add exit codes for scripting compatiblity
