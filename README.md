@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/yjeanrenaud/rPi_check_throttled/refs/head
 chmod a+x rPi_check_throttled.sh
 ```
 optionally: 
-`sudo mv rPi_check_throttled.sh`
+`sudo mv rPi_check_throttled.sh /usr/bin/`
 # Usage
 just run the script:
 `.\rPi_check_throttled.sh`
