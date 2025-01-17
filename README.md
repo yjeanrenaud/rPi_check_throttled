@@ -11,8 +11,10 @@ I love that code for debugging and monitoring various issues on these single boa
 
 # Installation
 You basically just need the script:
-`wget https://raw.githubusercontent.com/yjeanrenaud/rPi_check_throttled/refs/heads/main/rPi_check_throttled.sh`
-`chmod a+x rPi_check_throttled.sh`
+```
+wget https://raw.githubusercontent.com/yjeanrenaud/rPi_check_throttled/refs/heads/main/rPi_check_throttled.sh`
+chmod a+x rPi_check_throttled.sh
+```
 optionally: 
 `sudo mv rPi_check_throttled.sh`
 # Usage
